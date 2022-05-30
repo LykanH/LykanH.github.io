@@ -8,20 +8,7 @@
       <link href="/2022/05232.html"/>
       <url>/2022/05232.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a><strong>Java</strong>学习笔记</h1><blockquote><h2 id="第十天-："><a href="#第十天-：" class="headerlink" title="第十天 ："></a>第十天 ：</h2><ol><li><strong><a href="./java/F1.md">Object库函数</a></strong></li></ol></blockquote><hr>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/2022/05211.html"/>
-      <url>/2022/05211.html</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、Object-类的使用"><a href="#一、Object-类的使用" class="headerlink" title="一、Object 类的使用"></a>一、Object 类的使用</h1><h2 id="java-lang-Object类"><a href="#java-lang-Object类" class="headerlink" title="java.lang.Object类"></a>java.lang.Object类</h2><ol><li>Object类是所有Java类的根父亲</li><li>如果在类的声明中没有使用extends关键字指明其父类，则默认父类为java.alng.Object类</li><li>Object类中的功能（属性、方法）都具有通用性</li><li>Object类只声明了一个空参的构造器</li></ol><h2 id="x3D-x3D-和equals-的区别"><a href="#x3D-x3D-和equals-的区别" class="headerlink" title="&#x3D;&#x3D;和equals()的区别"></a>&#x3D;&#x3D;和equals()的区别</h2><h3 id="x3D-x3D-运算符"><a href="#x3D-x3D-运算符" class="headerlink" title="&#x3D;&#x3D;: 运算符"></a>&#x3D;&#x3D;: 运算符</h3><ol><li>可以使用在基本数据类型变量和引用数据类型变量中</li><li>如果比较的是基本数据类型变量：比较两个变量保存的数据是否相等。（不一定类型要相同）</li></ol><pre class=" language-bash"><code class="language-bash">    int i <span class="token operator">=</span> 10<span class="token punctuation">;</span>    double j <span class="token operator">=</span> 10<span class="token punctuation">;</span>    char k <span class="token operator">=</span> 10<span class="token punctuation">;</span>    System.out.println<span class="token punctuation">(</span>i <span class="token operator">==</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>     //true    System.out.println<span class="token punctuation">(</span>j <span class="token operator">==</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>     //true    char c1 <span class="token operator">=</span> 65<span class="token punctuation">;</span>    cahr c2 <span class="token operator">=</span> <span class="token string">'a'</span><span class="token punctuation">;</span>    System.out.println<span class="token punctuation">(</span>c1 <span class="token operator">==</span> c2<span class="token punctuation">)</span>   // <span class="token boolean">true</span></code></pre><ol><li>如果比较的是引用数据类型变量：比较两个对象的地址值是否相等。即两个引用是否指向同一个对象实体。</li></ol><h3 id="equals-方法的使用"><a href="#equals-方法的使用" class="headerlink" title="equals()方法的使用"></a>equals()方法的使用</h3><ol><li>是一个方法，而非运算符！</li><li>只能适用于引用数据类型</li><li>Object类中equals()的定义</li></ol><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object obj<span class="token punctuation">)</span>     <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">//说明：Object类中定义的</span>     <span class="token function">equals</span><span class="token punctuation">(</span><span class="token punctuation">)</span>和<span class="token operator">==</span>的作用是     相同 的，比较两个对象的     地址是否相同即两个引用是     否指向同一个地址。</code></pre><ol start="4"><li>像String、Date、File、包装类等重写了Object类中的equals()方法。重写以后比较的不是两个引用的地址是否相同，而是比较两个对象的实体内容是否相同。</li></ol>]]></content>
+        <content type="html"><![CDATA[<h1 id="Java学习笔记"><a href="#Java学习笔记" class="headerlink" title="Java学习笔记"></a><strong>Java</strong>学习笔记</h1><blockquote><h2 id="第十天-："><a href="#第十天-：" class="headerlink" title="第十天 ："></a>第十天 ：</h2><ol><li><strong><a href="../java/F1.md">Object库函数</a></strong></li></ol></blockquote><hr>]]></content>
       
       
       
