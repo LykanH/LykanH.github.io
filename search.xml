@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>SLAngels</title>
-      <link href="/2022/120147954.html"/>
-      <url>/2022/120147954.html</url>
+      <title>Hexo基本指令</title>
+      <link href="/2022/120124449.html"/>
+      <url>/2022/120124449.html</url>
       
-        <content type="html"><![CDATA[<p>ddsadasfag学生是发放尬得更快</p><pre class=" language-html"><code class="language-html">    .notebook-page.dotted <span class="token entity" title="&#123;">&amp;#123;</span>        background: linear-gradient(to bottom, #fbfae8 9px, #e4e4e4 1px);        background-size: 100% 10px;    <span class="token entity" title="&#125;">&amp;#125;</span>    .chip-container .chip:hover <span class="token entity" title="&#123;">&amp;#123;</span>        filter: invert(.1);    <span class="token entity" title="&#125;">&amp;#125;</span>    .notebook-page <span class="token entity" title="&#123;">&amp;#123;</span>        height: 100%;        width: 140px;        position: absolute;        top: 10px;        background-color: #fbfae8;        z-index: 0;        border-radius: 5px 16px 16px 5px;        overflow: hidden;    <span class="token entity" title="&#125;">&amp;#125;</span></code></pre>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 初出茅庐 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,12 +30,26 @@
     
     <entry>
       <title>爪洼学习之路</title>
-      <link href="/2022/05211.html"/>
-      <url>/2022/05211.html</url>
+      <link href="/2022/101251004.html"/>
+      <url>/2022/101251004.html</url>
       
         <content type="html"><![CDATA[<h1 id="一、Object-类的使用"><a href="#一、Object-类的使用" class="headerlink" title="一、Object 类的使用"></a>一、Object 类的使用</h1><h2 id="java-lang-Object类"><a href="#java-lang-Object类" class="headerlink" title="java.lang.Object类"></a>java.lang.Object类</h2><ol><li>Object类是所有Java类的根父亲</li><li>如果在类的声明中没有使用extends关键字指明其父类，则默认父类为java.alng.Object类</li><li>Object类中的功能（属性、方法）都具有通用性</li><li>Object类只声明了一个空参的构造器</li></ol><h2 id="x3D-x3D-和equals-的区别"><a href="#x3D-x3D-和equals-的区别" class="headerlink" title="&#x3D;&#x3D;和equals()的区别"></a>&#x3D;&#x3D;和equals()的区别</h2><h3 id="x3D-x3D-运算符"><a href="#x3D-x3D-运算符" class="headerlink" title="&#x3D;&#x3D;: 运算符"></a>&#x3D;&#x3D;: 运算符</h3><ol><li>可以使用在基本数据类型变量和引用数据类型变量中</li><li>如果比较的是基本数据类型变量：比较两个变量保存的数据是否相等。（不一定类型要相同）</li></ol><pre class=" language-java"><code class="language-java">    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>    <span class="token keyword">double</span> j <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>    <span class="token keyword">char</span> k <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i <span class="token operator">==</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//true</span>    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>j <span class="token operator">==</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//true</span>    <span class="token keyword">char</span> c1 <span class="token operator">=</span> <span class="token number">65</span><span class="token punctuation">;</span>    cahr c2 <span class="token operator">=</span> <span class="token string">'a'</span><span class="token punctuation">;</span>    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>c1 <span class="token operator">==</span> c2<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// true</span></code></pre><ol><li>如果比较的是引用数据类型变量：比较两个对象的地址值是否相等。即两个引用是否指向同一个对象实体。</li></ol><h3 id="equals-方法的使用"><a href="#equals-方法的使用" class="headerlink" title="equals()方法的使用"></a>equals()方法的使用</h3><ol><li>是一个方法，而非运算符！</li><li>只能适用于引用数据类型</li><li>Object类中equals()的定义</li></ol><pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object obj<span class="token punctuation">)</span>     <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>       <span class="token comment" spellcheck="true">//说明：Object类中定义的</span>     <span class="token function">equals</span><span class="token punctuation">(</span><span class="token punctuation">)</span>和<span class="token operator">==</span>的作用是     相同 的，比较两个对象的     地址是否相同即两个引用是     否指向同一个地址。</code></pre><ol start="4"><li>像String、Date、File、包装类等重写了Object类中的equals()方法。重写以后比较的不是两个引用的地址是否相同，而是比较两个对象的实体内容是否相同。</li></ol><h1 id="二、包装类的使用"><a href="#二、包装类的使用" class="headerlink" title="二、包装类的使用"></a>二、包装类的使用</h1><blockquote><p>1. </p></blockquote>]]></content>
       
       
+      <categories>
+          
+          <category> Java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Java </tag>
+            
+            <tag> JavaEE </tag>
+            
+        </tags>
       
     </entry>
     
@@ -37,25 +63,18 @@
         <content type="html"><![CDATA[<h2 id="第一章"><a href="#第一章" class="headerlink" title="第一章"></a>第一章</h2><p>搭建自己的网站还是挺有意思的<br>这里就不多赘述怎么搭建<br>之后有空会将整个搭建的步骤给单独写一篇文章<br>放在网站上边</p><hr><h2 id="第二章"><a href="#第二章" class="headerlink" title="第二章"></a>第二章</h2><p>仰天大笑出门去，我辈岂是蓬蒿人！</p><hr><h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><p><a href="http://www.yangpengbo.top/">www.yangpengbo.top</a></p>]]></content>
       
       
+      <categories>
+          
+          <category> 废话集 </category>
+          
+      </categories>
+      
       
         <tags>
             
-            <tag> Java </tag>
+            <tag> 废话集 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2022/051916107.html"/>
-      <url>/2022/051916107.html</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
