@@ -5,11 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="经典算法总结, muchen">
-    <meta name="description" content="Algorithms
-KMP算法
+    <meta name="description" content="AlgorithmsKMP算法
 muchen
 
-问题：如果给定文本串S“BBC ABCDAB ABCDABCDABDE”，和模式串P“ABCDABD”，现在要拿模式串P去跟文本串S匹配，如果文本串中含有模式串，则返回出现的		位置，若没有">
+问题：如果给定文本串S“BBC ABCDAB ABCDABCDABDE”，和模式串P“ABCDABD”，
+     现在要拿模式串P去跟文本串S匹配，如果文本串中含有模式串，则返回出现的
+  ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -470,21 +471,21 @@ muchen
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-01
+                    2023-02-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1k
+                    1.4k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    6 分
                 </div>
                 
 
@@ -504,13 +505,14 @@ muchen
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h1><ul>
-<li><h2 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h2><blockquote>
+                <h1 id="Algorithms"><a href="#Algorithms" class="headerlink" title="Algorithms"></a>Algorithms</h1><h2 id="KMP算法"><a href="#KMP算法" class="headerlink" title="KMP算法"></a>KMP算法</h2><blockquote>
 <p>muchen</p>
 </blockquote>
-<pre><code>问题：如果给定文本串S“BBC ABCDAB ABCDABCDABDE”，和模式串P“ABCDABD”，现在要拿模式串P去跟文本串S匹配，如果文本串中含有模式串，则返回出现的		位置，若没有则返回-1.
+<pre class=" language-java"><code class="language-java">问题：如果给定文本串S“BBC ABCDAB ABCDABCDABDE”，和模式串P“ABCDABD”，
+     现在要拿模式串P去跟文本串S匹配，如果文本串中含有模式串，则返回出现的
+     位置，若没有则返回<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">.</span>
 </code></pre>
-<h4 id="x3D-x3D-可以使用暴力解法，代码如下-暴力易懂，但是重复比较次数太多-：-x3D-x3D"><a href="#x3D-x3D-可以使用暴力解法，代码如下-暴力易懂，但是重复比较次数太多-：-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;可以使用暴力解法，代码如下(暴力易懂，但是重复比较次数太多)：&#x3D;&#x3D;"></a>&#x3D;&#x3D;可以使用暴力解法，代码如下(暴力易懂，但是重复比较次数太多)：&#x3D;&#x3D;</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">VoilenceMatch</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<h4 id="可以使用暴力解法，代码如下-暴力易懂，但是重复比较次数太多-："><a href="#可以使用暴力解法，代码如下-暴力易懂，但是重复比较次数太多-：" class="headerlink" title="可以使用暴力解法，代码如下(暴力易懂，但是重复比较次数太多)："></a>可以使用暴力解法，代码如下(暴力易懂，但是重复比较次数太多)：</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">VoilenceMatch</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         String s1 <span class="token operator">=</span> <span class="token string">"basadbace"</span><span class="token punctuation">;</span>
         String s2 <span class="token operator">=</span> <span class="token string">"bac"</span><span class="token punctuation">;</span>
@@ -542,7 +544,7 @@ muchen
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-<h4 id="x3D-x3D-使用KMP算法解决该问题-思路-x3D-x3D"><a href="#x3D-x3D-使用KMP算法解决该问题-思路-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;使用KMP算法解决该问题(思路)&#x3D;&#x3D;"></a>&#x3D;&#x3D;使用KMP算法解决该问题(思路)&#x3D;&#x3D;</h4><ul>
+<h4 id="使用KMP算法解决该问题-思路"><a href="#使用KMP算法解决该问题-思路" class="headerlink" title="使用KMP算法解决该问题(思路)"></a>使用KMP算法解决该问题(思路)</h4><ul>
 <li><p><strong>寻找前缀后缀最长公共元素长度(最大长度表)</strong></p>
 <ul>
 <li><p>对于P &#x3D; p0 p1 …pj-1 pj，寻找模式串P中长度最大且相等的前缀和后缀。如果存在p0 p1 …pk-1 pk &#x3D; pj- k pj-k+1…pj-1 pj，那么在包含pj的模式串中有最大长度为k+1的相同前缀后缀。举个例子， 如果给定的模式串是：“ABCDABD”，从左至右遍历整个模式串，其各个子串的前缀后缀分别如下表格所示：</p>
@@ -575,7 +577,7 @@ muchen
 </ul>
 </li>
 </ul>
-<h4 id="x3D-x3D-KMP代码实现-x3D-x3D"><a href="#x3D-x3D-KMP代码实现-x3D-x3D" class="headerlink" title="&#x3D;&#x3D;KMP代码实现&#x3D;&#x3D;"></a>&#x3D;&#x3D;KMP代码实现&#x3D;&#x3D;</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">KMPAlgorithm</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<h4 id="KMP代码实现"><a href="#KMP代码实现" class="headerlink" title="KMP代码实现"></a>KMP代码实现</h4><pre class=" language-java"><code class="language-java"><span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">KMPAlgorithm</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
     <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
         String str1 <span class="token operator">=</span> <span class="token string">"BBC ABCDAB ABCDABCDABDE"</span><span class="token punctuation">;</span>
         String str2 <span class="token operator">=</span> <span class="token string">"ABCDABD"</span><span class="token punctuation">;</span>
@@ -625,8 +627,58 @@ muchen
     <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
 </code></pre>
-</li>
-</ul>
+<h2 id="斐波那契数列"><a href="#斐波那契数列" class="headerlink" title="斐波那契数列"></a>斐波那契数列</h2><pre class=" language-java"><code class="language-java"><span class="token number">1</span>	<span class="token number">1</span>	<span class="token number">2</span>	<span class="token number">3</span>	<span class="token number">5</span>	<span class="token number">8</span>	<span class="token number">13</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>第一个和第二个数字是<span class="token number">1</span>，其他的数字等于前两个数字之和
+</code></pre>
+<h5 id="递归实现："><a href="#递归实现：" class="headerlink" title="递归实现："></a>递归实现：</h5><h6 id="例一"><a href="#例一" class="headerlink" title="例一"></a>例一</h6><pre class=" language-java"><code class="language-java"><span class="token comment" spellcheck="true">/**
+ * @author muchen
+ * @create 2023 - 02 - 2023/2/18 11:22
+ * 斐波那契数列的实现
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">FeiBoNaQi</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//        递归：代码简洁，但是涉及到的运算会随着递归层数的增加成指数级增长</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+<span class="token comment" spellcheck="true">//        斐波那契数列的前两位为1</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token operator">||</span>n <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token function">count</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">+</span><span class="token function">count</span><span class="token punctuation">(</span>n<span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
+<h6 id="例二"><a href="#例二" class="headerlink" title="例二"></a>例二</h6><pre class=" language-java"><code class="language-java"><span class="token punctuation">(</span><span class="token number">20</span>年Java蓝桥杯<span class="token punctuation">)</span>
+如下图所示，小明用从<span class="token number">1</span>开始的正整数<span class="token string">"蛇形"</span>填充无限大的矩阵。
+<span class="token number">1</span> <span class="token number">2</span> <span class="token number">6</span> <span class="token number">7</span> <span class="token number">15</span> <span class="token number">16</span> <span class="token number">28</span> <span class="token number">29</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">3</span> <span class="token number">5</span> <span class="token number">8</span> <span class="token number">14</span> <span class="token number">17</span> <span class="token number">27</span> <span class="token number">30</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">4</span> <span class="token number">9</span> <span class="token number">13</span> <span class="token number">18</span> <span class="token number">26</span> <span class="token number">31</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">10</span> <span class="token number">12</span> <span class="token number">19</span> <span class="token number">25</span> <span class="token number">32</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">11</span> <span class="token number">20</span> <span class="token number">24</span> <span class="token number">33</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">21</span> <span class="token number">23</span> <span class="token number">34</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token number">22</span> <span class="token number">35</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+容易看出矩阵第二行第二列中的数是<span class="token number">5</span>。请你计算矩阵中第<span class="token number">20</span>行第<span class="token number">20</span>列的数是多少<span class="token operator">?</span>
+</code></pre>
+<pre class=" language-java"><code class="language-java">分析：第<span class="token number">20</span>行<span class="token number">20</span>列处于<span class="token number">45</span>度这条线上，
+    这条线上的数字是：<span class="token number">1</span><span class="token punctuation">,</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token number">25</span><span class="token punctuation">,</span><span class="token number">41</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>	两数之差：<span class="token number">4</span> <span class="token number">8</span> <span class="token number">12</span> <span class="token number">16</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+    每一个都是在前一个数之差的基础上<span class="token operator">+</span><span class="token number">4</span>，可以用递归或者循环
+    且第<span class="token number">20</span>行<span class="token number">20</span>列相当于这个数列的第<span class="token number">20</span>位数字
+<span class="token comment" spellcheck="true">/**
+ * @author muchen
+ * @create 2023 - 02 - 2023/2/18 14:47
+ */</span>
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Snake</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+        System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token function">count</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+    <span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">int</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token keyword">int</span> n<span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>    <span class="token comment" spellcheck="true">//n=20时结果为761</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>n <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
+            <span class="token keyword">return</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+        <span class="token keyword">return</span> <span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">*</span><span class="token number">4</span><span class="token operator">+</span><span class="token function">count</span><span class="token punctuation">(</span>n <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">//通过递归计算前一个数的值</span>
+    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+<span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>
+</code></pre>
 
                 
             </div>
@@ -1091,7 +1143,7 @@ muchen
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022</span>
+                <span id="year">2022-2023</span>
             
             <a href="/about" target="_blank">沐辰</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
@@ -1099,7 +1151,7 @@ muchen
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">1.5k</span>
+                        class="white-color">2.2k</span>
             
             
             
