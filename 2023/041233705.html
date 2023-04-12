@@ -4,11 +4,17 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="爪洼学习之路, muchen">
-    <meta name="description" content="一、Object 类的使用java.lang.Object类
-Object类是所有Java类的根父亲
-如果在类的声明中没有使用extends关键字指明其父类，则默认父类为java.alng.Object类
-Object类中的功能（属性、方法">
+    <meta name="keywords" content="如何将本地文件上传到GitHub, muchen">
+    <meta name="description" content="将本地文件上传到GitHub
+在GitHub上新建一个仓库
+
+
+
+其中各项代表的含义
+
+Repository name: 仓库名称
+Description(可选): 仓库描述介绍
+Public, Private : 仓库权限。public ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -22,7 +28,7 @@ Object类中的功能（属性、方法">
 
     
 
-    <title>爪洼学习之路 | muchen</title>
+    <title>如何将本地文件上传到GitHub | muchen</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -312,12 +318,12 @@ Object类中的功能（属性、方法">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">爪洼学习之路</h1>
+                    <h1 class="description center-align post-title">如何将本地文件上传到GitHub</h1>
                 </div>
             </div>
         </div>
@@ -433,27 +439,14 @@ Object类中的功能（属性、方法">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Java/">
-                                <span class="chip bg-color">Java</span>
-                            </a>
-                        
-                            <a href="/tags/JavaEE/">
-                                <span class="chip bg-color">JavaEE</span>
+                            <a href="/tags/github/">
+                                <span class="chip bg-color">github</span>
                             </a>
                         
                     </div>
                     
                 </div>
                 <div class="col s5 right-align">
-                    
-                    <div class="post-cate">
-                        <i class="fas fa-bookmark fa-fw icon-category"></i>
-                        
-                            <a href="/categories/Java/" class="post-category">
-                                Java
-                            </a>
-                        
-                    </div>
                     
                 </div>
             </div>
@@ -462,21 +455,21 @@ Object类中的功能（属性、方法">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-10-12
+                    2023-04-12
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-12-01
+                    2023-04-12
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    381
+                    303
                 </div>
                 
 
@@ -503,51 +496,50 @@ Object类中的功能（属性、方法">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、Object-类的使用"><a href="#一、Object-类的使用" class="headerlink" title="一、Object 类的使用"></a>一、Object 类的使用</h1><h2 id="java-lang-Object类"><a href="#java-lang-Object类" class="headerlink" title="java.lang.Object类"></a>java.lang.Object类</h2><ol>
-<li>Object类是所有Java类的根父亲</li>
-<li>如果在类的声明中没有使用extends关键字指明其父类，则默认父类为java.alng.Object类</li>
-<li>Object类中的功能（属性、方法）都具有通用性</li>
-<li>Object类只声明了一个空参的构造器</li>
-</ol>
-<h2 id="x3D-x3D-和equals-的区别"><a href="#x3D-x3D-和equals-的区别" class="headerlink" title="&#x3D;&#x3D;和equals()的区别"></a>&#x3D;&#x3D;和equals()的区别</h2><h3 id="x3D-x3D-运算符"><a href="#x3D-x3D-运算符" class="headerlink" title="&#x3D;&#x3D;: 运算符"></a>&#x3D;&#x3D;: 运算符</h3><ol>
-<li>可以使用在基本数据类型变量和引用数据类型变量中</li>
-<li>如果比较的是基本数据类型变量：比较两个变量保存的数据是否相等。（不一定类型要相同）</li>
-</ol>
-<pre class=" language-java"><code class="language-java">    <span class="token keyword">int</span> i <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-    <span class="token keyword">double</span> j <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-    <span class="token keyword">char</span> k <span class="token operator">=</span> <span class="token number">10</span><span class="token punctuation">;</span>
-    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>i <span class="token operator">==</span> j<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//true</span>
-    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>j <span class="token operator">==</span> k<span class="token punctuation">)</span><span class="token punctuation">;</span>     <span class="token comment" spellcheck="true">//true</span>
-
-    <span class="token keyword">char</span> c1 <span class="token operator">=</span> <span class="token number">65</span><span class="token punctuation">;</span>
-    cahr c2 <span class="token operator">=</span> <span class="token string">'a'</span><span class="token punctuation">;</span>
-    System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>c1 <span class="token operator">==</span> c2<span class="token punctuation">)</span>   <span class="token comment" spellcheck="true">// true</span>
-</code></pre>
+                <h1 id="将本地文件上传到GitHub"><a href="#将本地文件上传到GitHub" class="headerlink" title="将本地文件上传到GitHub"></a>将本地文件上传到GitHub</h1><ul>
+<li><h2 id="在GitHub上新建一个仓库"><a href="#在GitHub上新建一个仓库" class="headerlink" title="在GitHub上新建一个仓库"></a>在GitHub上新建一个仓库</h2></li>
+</ul>
+<p><img src="/../picture/GitHub/git_01.png" alt="01"></p>
+<p><img src="/../picture/GitHub/git_02.png"></p>
+<p><strong>其中各项代表的含义</strong></p>
 <ol>
-<li>如果比较的是引用数据类型变量：比较两个对象的地址值是否相等。即两个引用是否指向同一个对象实体。</li>
+<li>Repository name: 仓库名称</li>
+<li>Description(可选): 仓库描述介绍</li>
+<li>Public, Private : 仓库权限。public 公开共享，但是是免费的。private 私有或指定合作者,需付费使用。</li>
+<li>Initialize this repository with a README: 添加一个README.md</li>
+<li>gitignore: 不需要进行版本管理的仓库类型，对应生成文件.gitignore</li>
+<li>license: 证书类型，对应生成文件LICENSE</li>
 </ol>
-<h3 id="equals-方法的使用"><a href="#equals-方法的使用" class="headerlink" title="equals()方法的使用"></a>equals()方法的使用</h3><ol>
-<li>是一个方法，而非运算符！</li>
-<li>只能适用于引用数据类型</li>
-<li>Object类中equals()的定义</li>
+<ul>
+<li><h2 id="复制仓库链接"><a href="#复制仓库链接" class="headerlink" title="复制仓库链接"></a>复制仓库链接</h2><p><img src="/../picture/GitHub/git_03.png" alt="02"></p>
+<p>(copy这个地址备用~)</p>
+</li>
+<li><h2 id="上传文件到仓库"><a href="#上传文件到仓库" class="headerlink" title="上传文件到仓库"></a>上传文件到仓库</h2></li>
+</ul>
+<ol>
+<li><h6 id="在电脑创建空文件夹进入该文件夹右键并选择-Git-Bash-Here"><a href="#在电脑创建空文件夹进入该文件夹右键并选择-Git-Bash-Here" class="headerlink" title="在电脑创建空文件夹进入该文件夹右键并选择(Git Bash Here)"></a>在电脑创建空文件夹进入该文件夹右键并选择(Git Bash Here)</h6><p><img src="/../picture/GitHub/git_04.png"></p>
+</li>
+<li><h6 id="然后把新建的仓库克隆到本地。-代码：git-clone-仓库地址"><a href="#然后把新建的仓库克隆到本地。-代码：git-clone-仓库地址" class="headerlink" title="然后把新建的仓库克隆到本地。(代码：git clone + 仓库地址)"></a>然后把新建的仓库克隆到本地。(代码：git clone + 仓库地址)</h6><p><img src="/../picture/GitHub/git_05.png"></p>
+</li>
+<li><h6 id="将你需要上传的文件或者文件夹复制到克隆到文件夹下"><a href="#将你需要上传的文件或者文件夹复制到克隆到文件夹下" class="headerlink" title="将你需要上传的文件或者文件夹复制到克隆到文件夹下"></a>将你需要上传的文件或者文件夹复制到克隆到文件夹下</h6><p><img src="/../picture/GitHub/git_06.png"></p>
+</li>
+<li><h6 id="依次输入："><a href="#依次输入：" class="headerlink" title="依次输入："></a>依次输入：</h6><h6 id="git-init"><a href="#git-init" class="headerlink" title="git init"></a>git init</h6></li>
 </ol>
-<pre class=" language-java"><code class="language-java">    <span class="token keyword">public</span> <span class="token keyword">boolean</span> <span class="token function">equals</span><span class="token punctuation">(</span>Object obj<span class="token punctuation">)</span> 
-    <span class="token operator">&amp;</span>#<span class="token number">123</span><span class="token punctuation">;</span>
-        <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token keyword">this</span> <span class="token operator">==</span> obj<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token operator">&amp;</span>#<span class="token number">125</span><span class="token punctuation">;</span>   
-
-    <span class="token comment" spellcheck="true">//说明：Object类中定义的</span>
-     <span class="token function">equals</span><span class="token punctuation">(</span><span class="token punctuation">)</span>和<span class="token operator">==</span>的作用是
-     相同 的，比较两个对象的
-     地址是否相同即两个引用是
-     否指向同一个地址。
-</code></pre>
-<ol start="4">
-<li>像String、Date、File、包装类等重写了Object类中的equals()方法。重写以后比较的不是两个引用的地址是否相同，而是比较两个对象的实体内容是否相同。</li>
+<p>git add .<br>git commit -m “你的提交信息”</p>
+<h6 id="注意：会要求-输入"><a href="#注意：会要求-输入" class="headerlink" title="注意：会要求 输入"></a>注意：会要求 输入</h6><h6 id="git-config-–global-user-email-“-121-111-x75-64-x65-x78-x61-x6d-112-x6c-101-x2e-99-111-109-“"><a href="#git-config-–global-user-email-“-121-111-x75-64-x65-x78-x61-x6d-112-x6c-101-x2e-99-111-109-“" class="headerlink" title="git config –global user.email “&#121;&#111;&#x75;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#109;“"></a>git config –global user.email “<a href="mailto:&#121;&#111;&#x75;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#109;">&#121;&#111;&#x75;&#64;&#x65;&#x78;&#x61;&#x6d;&#112;&#x6c;&#101;&#x2e;&#99;&#111;&#109;</a>“</h6><h6 id="git-config-–global-user-name-“Your-Name”"><a href="#git-config-–global-user-name-“Your-Name”" class="headerlink" title="git config –global user.name “Your Name”"></a>git config –global user.name “Your Name”</h6><h6 id="确定你的身份"><a href="#确定你的身份" class="headerlink" title="确定你的身份"></a>确定你的身份</h6><h6 id="git-push"><a href="#git-push" class="headerlink" title="git push"></a>git push</h6><p>   <img src="/../picture/GitHub/git_07.png"></p>
+<p><img src="/../picture/GitHub/git_08.png"></p>
+<p><img src="/../picture/GitHub/git_09.png"></p>
+<p><img src="/../picture/GitHub/git_10.png"></p>
+<p>（网络不好超时啦）</p>
+<ul>
+<li><h2 id="如果之后又新文件添加-重复即可"><a href="#如果之后又新文件添加-重复即可" class="headerlink" title="如果之后又新文件添加(重复即可)"></a>如果之后又新文件添加(重复即可)</h2></li>
+</ul>
+<ol>
+<li><h6 id="git-add"><a href="#git-add" class="headerlink" title="git add ."></a>git add .</h6></li>
+<li><h6 id="git-commit-m-“cnt”"><a href="#git-commit-m-“cnt”" class="headerlink" title="git commit -m “cnt”"></a>git commit -m “cnt”</h6></li>
+<li><h6 id="git-add-‘添加的新文件’"><a href="#git-add-‘添加的新文件’" class="headerlink" title="git add ‘添加的新文件’"></a>git add ‘添加的新文件’</h6></li>
+<li><h6 id="git-push-1"><a href="#git-push-1" class="headerlink" title="git push"></a>git push</h6></li>
 </ol>
-<h1 id="二、包装类的使用"><a href="#二、包装类的使用" class="headerlink" title="二、包装类的使用"></a>二、包装类的使用</h1><blockquote>
-<p>1. </p>
-</blockquote>
 
                 
             </div>
@@ -574,7 +566,7 @@ Object类中的功能（属性、方法">
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://lykanh.github.io/2022/101251004.html">http://lykanh.github.io/2022/101251004.html</a>
+                    <a href="http://lykanh.github.io/2023/041233705.html">http://lykanh.github.io/2023/041233705.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -612,12 +604,8 @@ Object类中的功能（属性、方法">
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Java/">
-                                    <span class="chip bg-color">Java</span>
-                                </a>
-                            
-                                <a href="/tags/JavaEE/">
-                                    <span class="chip bg-color">JavaEE</span>
+                                <a href="/tags/github/">
+                                    <span class="chip bg-color">github</span>
                                 </a>
                             
                         </div>
@@ -791,17 +779,18 @@ Object类中的功能（属性、方法">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2022/120151004.html">
+                <a href="/2023/041233705.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/23.jpg" class="responsive-img" alt="经典算法总结">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="如何将本地文件上传到GitHub">
                         
-                        <span class="card-title">经典算法总结</span>
+                        <span class="card-title">如何将本地文件上传到GitHub</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -811,9 +800,55 @@ Object类中的功能（属性、方法">
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-01
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-04-12
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            沐辰
+                            
                         </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/github/">
+                        <span class="chip bg-color">github</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2023/02181.html">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="LeetCode">
+                        
+                        <span class="card-title">LeetCode</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -835,55 +870,6 @@ Object类中的功能（属性、方法">
                     
                     <a href="/tags/%E7%AE%97%E6%B3%95/">
                         <span class="chip bg-color">算法</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/052015650.html">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="我的第一篇博客文章">
-                        
-                        <span class="card-title">我的第一篇博客文章</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-20
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/%E5%BA%9F%E8%AF%9D%E9%9B%86/" class="post-category">
-                                    废话集
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E5%BA%9F%E8%AF%9D%E9%9B%86/">
-                        <span class="chip bg-color">废话集</span>
                     </a>
                     
                 </div>
