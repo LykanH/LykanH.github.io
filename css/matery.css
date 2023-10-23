@@ -1297,9 +1297,11 @@ thead {
 }
 
 .chip-container .chip-active {
-    color: #FFF !important;
+    /* color: #FFF !important;
     background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
-    box-shadow: 2px 5px 10px #aaa !important;
+    box-shadow: 2px 5px 10px #aaa !important; */
+	color: #2ea451 !important;
+	box-shadow: 2px 5px 10px #aaa !important;
 }
 
 .chip-container .chip {
@@ -1316,8 +1318,9 @@ thead {
 }
 
 .chip-container .chip:hover {
-    color: #fff;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important;
+    color: #2ea451;
+    /* background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%) !important; */
+	opacity: .8;
 }
 
 .chip .tag-length {
